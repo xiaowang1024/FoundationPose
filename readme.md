@@ -124,11 +124,13 @@ CMAKE_PREFIX_PATH=$CONDA_PREFIX/lib/python3.9/site-packages/pybind11/share/cmake
 ```
 # If the cuda version is after 12.x 
 ```
+# Kaolin (Optional, needed if running model-free setup)
 python -m pip install --quiet --no-cache-dir kaolin==0.17.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.0_cu124.html
 ```
 install pytorch3d version:
 [pytorch3d](https://anaconda.org/pytorch3d/pytorch3d/files)
 ```
+# PyTorch3D
 python -m pip install --quiet --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py39_cu121_pyt241/download.html
 ```
 
