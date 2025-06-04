@@ -134,6 +134,15 @@ install pytorch3d version:
 python -m pip install --quiet --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py39_cu121_pyt241/download.html
 ```
 
+# install boost
+boost lib errors, when I run the demo 
+```python
+python run_demo.py
+```
+Use manual installation:
+[boost install](https://cn.linux-console.net/?p=13955)
+[boost install and uninstall](https://blog.csdn.net/liubang00001/article/details/137841399)
+
 # Run model-based demo
 The paths have been set in argparse by default. If you need to change the scene, you can pass the args accordingly. By running on the demo data, you should be able to see the robot manipulating the mustard bottle. Pose estimation is conducted on the first frame, then it automatically switches to tracking mode for the rest of the video. The resulting visualizations will be saved to the `debug_dir` specified in the argparse. (Note the first time running could be slower due to online compilation)
 ```
